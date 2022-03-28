@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "keystone-next",
     "seed-data": "keystone-next --seed-data",
-    "build": "keystone-next build && keystone-next prisma migrate deploy"
+    "build": "keystone-next build"
   },
   "eslintConfig": {
     "extends": "wesbos/typescript.js",
