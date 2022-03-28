@@ -2,7 +2,7 @@ import gql from 'graphql-tag';
 import { useMutation } from '@apollo/client';
 import Form from './styles/Form';
 import useForm from '../lib/useForm';
-import { CURRENT_USER_QUERY, useUser } from './User';
+import { CURRENT_USER_QUERY } from './User';
 import Error from './ErrorMessage';
 import Router from 'next/router';
 
@@ -25,7 +25,6 @@ const SIGNIN_MUTATION = gql`
 `;
 
 export default function SignIn() {
-  const user = useUser();
   const { inputs, handleChange, resetForm } = useForm({
     email: '',
     password: '',
@@ -40,7 +39,7 @@ export default function SignIn() {
     console.log(inputs);
     const res = await signin();
     console.log(res);
-    console.log(user);
+    resetForm();
     
   }
   const error =
