@@ -53,6 +53,7 @@ export default withAuth(
       cors: {
         origin: [process.env.FRONTEND_URL],
         credentials: true,
+        preflightContinue: true,
       },
     },
     db: {
