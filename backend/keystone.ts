@@ -51,7 +51,8 @@ export default withAuth(
     // @ts-ignore
     server: {
       cors: {
-        origin: false,
+        origin: [process.env.FRONTEND_URL],
+        credentials: true,
       },
     },
     db: {
