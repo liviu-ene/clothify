@@ -39,9 +39,7 @@ export default function SignIn() {
     console.log(inputs);
     const res = await signin();
     console.log(res);
-    Router.push({
-      pathname: '/',
-    });
+    
   }
   const error =
     data?.authenticateUserWithPassword.__typename ===
