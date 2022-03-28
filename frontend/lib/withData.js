@@ -29,7 +29,9 @@ function createClient({ headers, initialState }) {
           origin: 'https://clothify.vercel.app'
         },
         // pass the headers along from this request. This enables SSR with logged in state
-        headers,
+        headers : {
+          'Access-Control-Allow-Origin': 'https://clothify.vercel.app',
+        },
       }),
     ]),
     cache: new InMemoryCache({
