@@ -28,9 +28,7 @@ function createClient({ headers, initialState }) {
           credentials: 'include',
         },
         // pass the headers along from this request. This enables SSR with logged in state
-        headers: {
-           cookie: headers && headers.cookie // NOTE: client-side headers is undefined!
-        },
+        headers,
       }),
     ]),
     cache: new InMemoryCache({
