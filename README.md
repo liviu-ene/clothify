@@ -7,11 +7,12 @@ The app also includes many server side bits including authentication, permission
 
 Deployed on vercel: https://clothify.vercel.app/
 
-![App Screenshot](https://i.imgur.com/Fd1hikD.png)
+![App Screenshot](https://i.imgur.com/lssOQyn.png)
 
 ## Tech Stack
 
 - React
+- Next.js
 - Styled Components
 - Apollo Client
 - GraphQL
