@@ -9,6 +9,13 @@ const GlobalStyles = createGlobalStyle`
     font-weight: normal;
     font-style: normal;
   }
+
+@font-face {
+    font-family: 'radnika_next_bold';
+    src: url('/static/radnikanext-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    }
   html {
     --gradient-right: linear-gradient(to right,#be93c5,#7bc6cc);
     --pink: #c9a0bf;
@@ -37,6 +44,7 @@ const GlobalStyles = createGlobalStyle`
     line-height:2;
   }
   a {
+    font-family: 'radnika_next_bold', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     color: var(--white);
   }
