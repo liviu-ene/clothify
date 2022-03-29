@@ -20,8 +20,7 @@ import { permissionsList } from './schemas/fields';
 
 function check(name: string) {}
 
-const databaseURL =
-  process.env.DATABASE_URL || 'mongodb://localhost/keystone-sick-fits-tutorial';
+const databaseURL = process.env.DATABASE_URL;
 
 const sessionConfig = {
   secret: process.env.COOKIE_SECRET,
@@ -51,7 +50,7 @@ export default withAuth(
     // @ts-ignore
     server: {
       cors: {
-        origin: 'http://localhost:7777',
+        origin: 'https://clothify.vercel.app/',
         methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
         credentials: true,
       },
