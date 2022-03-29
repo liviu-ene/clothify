@@ -43,7 +43,7 @@ export function useUser() {
     "name": "Demo",
     "role": {
         "__typename": "Role",
-        "canManageProducts": true,
+        "canManageProducts": false,
         "canManageCart": true,
         "canManageOrders": true
     },
