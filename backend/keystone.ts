@@ -51,7 +51,7 @@ export default withAuth(
     // @ts-ignore
     server: {
       cors: {
-        origin: 'https://clothify.vercel.app',
+        origin: 'http://localhost:7777',
         methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
         credentials: true,
       },
