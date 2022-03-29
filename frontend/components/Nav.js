@@ -16,7 +16,6 @@ export default function Nav() {
         <>
           <Link href="/sell">Sell</Link>
           <Link href="/orders">Orders</Link>
-          <SignOut />
           <button type="button" onClick={openCart}>
             My Cart
             <CartCount
