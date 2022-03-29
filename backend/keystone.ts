@@ -24,10 +24,12 @@ const databaseURL =
   process.env.DATABASE_URL || 'mongodb://localhost/keystone-sick-fits-tutorial';
 
 const sessionConfig = {
-  maxAge: 60 * 60 * 24 * 360, // How long they stay signed in?
-  secure: true,
   secret: process.env.COOKIE_SECRET,
-  sameSite: 'None',
+  cookie: {
+    secure: true,
+    maxAge: 60 * 60 * 24 * 360,
+    sameSite: 'none',
+  }
 };
 
 const { withAuth } = createAuth({
